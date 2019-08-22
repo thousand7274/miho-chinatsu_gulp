@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+%card {
+  box-sizing: border-box;
+  width: 307px;
+  // border: 1px solid #cccc;
+  border-radius: 5px;
+  background-color: rgb(248, 244, 244);
+
+  img {
+    width: 100%;
+
+  }
+
+  .text p{
+    text-align: left;
+    letter-spacing: 0;
+    color:  #333333;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
+  .text p span {
+    font-weight: bold;
+  }
+}
+.card {
+  @extend %card;
+}
