@@ -1,3 +1,62 @@
-section{
+.contact {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 50px;
+  background-color: #ebf4f5;
   text-align: center;
+
+  @mixin box {
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: block;
+    width: 400px;
+  }
+
+    .form {
+    margin: 10px 0 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+    .form-left {
+    margin-right: 50px;
+
+    .name {
+      @include box;
+      margin-bottom: 20px;
+      height: 50px;
+    }
+    .email {
+      @include box;
+      height: 50px;
+    }
+
+  }
+
+
+  .inquiry {
+    @include box;
+    height: 120px;
+  }
+
+  button {
+    background-color: goldenrod;
+    color: #fff;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: goldenrod;
+      transition-duration: 500ms;
+    }
+  }
+
+
 }
