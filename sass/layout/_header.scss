@@ -1,10 +1,16 @@
+$white: #ffffff;
+
+
 .header{
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $white;
 
   &__img{
     text-align: center;
+  }
+  & img{
+    border-radius: 10px;
   }
 
   &__nav{
@@ -13,6 +19,21 @@
 
     & li{
       list-style: none;
+      cursor: pointer;
+      display: block;
+      position: relative;
+
+
+      &:hover::before{
+         content:'\f578';
+         font-family: "Font Awesome 5 Free";
+         font-weight: 900;
+         position: absolute;
+         left:-20px;
+         top:3px;
+        //  color: $white;
+
+      }
     }
   }
 }
