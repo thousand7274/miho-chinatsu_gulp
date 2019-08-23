@@ -26,7 +26,6 @@ $white: #ffffff;
       display: block;
       position: relative;
 
-
       &:hover::before{
          content:'\f578';
          font-family: "Font Awesome 5 Free";
@@ -36,6 +35,11 @@ $white: #ffffff;
          bottom:20px;
         //  color: $white;
 
+        a {
+        text-decoration: none;
+        color: gold;
+
+        }
       }
     }
   }
