@@ -14,9 +14,14 @@
 }
 
 .map {
-  width: 600px;
-  height: 450px;
+  width: 800px;
   margin: 50px auto;
+
+  &__title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
 
 .iframeWrapper {
   position: relative;
