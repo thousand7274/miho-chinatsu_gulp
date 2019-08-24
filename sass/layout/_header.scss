@@ -7,7 +7,6 @@ $white: #ffffff;
   flex-direction: column;
   border-bottom: 1px solid $white;
 
-
   &__img{
     text-align: center;
   }
@@ -26,6 +25,15 @@ $white: #ffffff;
       display: block;
       position: relative;
 
+      & a{
+        text-decoration: none;
+        color: gold;
+
+        &:visited{
+          color: gold;
+        }
+      }
+
       &:hover::before{
          content:'\f578';
          font-family: "Font Awesome 5 Free";
@@ -33,13 +41,6 @@ $white: #ffffff;
          position: absolute;
          left:-20px;
          bottom:20px;
-        //  color: $white;
-
-        a {
-        text-decoration: none;
-        color: gold;
-
-        }
       }
     }
   }
