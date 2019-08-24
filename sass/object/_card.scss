@@ -1,10 +1,8 @@
-
-
 %card {
   box-sizing: border-box;
   width:　350px;
   border-radius: 5px;
-  background-color: rgb(248, 244, 244);
+  background-color: $beige;
 
 
   img {
@@ -17,16 +15,18 @@
     text-align: left;
     padding: 10px;
     letter-spacing: 1;
-    color:  #333333;
+    color: $black;
     opacity: 1;
     padding-bottom: 20px;
   }
 }
+
 .card {
   @extend %card;
-  &__title {
-    text-align: center;
-    font-weight: bold;
-    color: #333333;
-  }
+
+   &__title {
+     text-align: center;
+     font-weight: bold;
+     color: $black;
+    }
 }

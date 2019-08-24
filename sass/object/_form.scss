@@ -49,8 +49,8 @@
 
   button {
     font-family: $font-fam;
-    background: #fff;
-    color: rgb(82, 64, 50);
+    background: $white;
+    // color: $brown;
     border: none;
     border-radius: 10px;
     font-size: 24px;
@@ -75,7 +75,7 @@
 
     &:hover::before{
       cursor: pointer;
-      background: #fff;
+      background: $white;
       color: gold;
       transition-duration: 500ms;
       opacity: 0;

@@ -2,15 +2,21 @@
   width: 100%;
   margin-top: 50px;
 }
-%container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 100px;
-  line-height: 1.5;
-}
+
 .container {
-  @extend %container;
+  .ct-title{
+    font-size: 2em;
+    display: inline;
+  }
+
+  .boxcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    line-height: 1.5;
+  }
+
 }
 
 .map {
