@@ -1,8 +1,9 @@
 %card {
   box-sizing: border-box;
-  width:　350px;
+  width: 350px;
   border-radius: 5px;
-  background-color: $beige;
+  background: rgb(248, 244, 244);
+  border: 4px solid $color-gold;
 
 
   img {
@@ -15,7 +16,7 @@
     text-align: left;
     padding: 10px;
     letter-spacing: 1;
-    color: $black;
+    color: #333333;
     opacity: 1;
     padding-bottom: 20px;
   }
@@ -27,6 +28,6 @@
    &__title {
      text-align: center;
      font-weight: bold;
-     color: $black;
+     color: #333333;
     }
 }
