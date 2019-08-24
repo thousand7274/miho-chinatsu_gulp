@@ -1,4 +1,4 @@
-$white: #ffffff;
+
 
 
 .header{
@@ -35,9 +35,7 @@ $white: #ffffff;
       }
 
       &:hover::before{
-         content:'\f578';
-         font-family: "Font Awesome 5 Free";
-         font-weight: 900;
+        @include fontawesome('\f578');
          position: absolute;
          left:-20px;
          bottom:20px;

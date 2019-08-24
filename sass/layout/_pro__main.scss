@@ -1,8 +1,12 @@
 .pro-title{
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
   font-size: 32px;
   font-family: $font-fam;
+
+  &::before{
+        @include fontawesome('\f578');
+  }
 }
 .arrow{
   text-align: center;
