@@ -50,7 +50,7 @@
   button {
     font-family: $font-fam;
     background: $white;
-    // color: $brown;
+    color: $brown;
     border: none;
     border-radius: 10px;
     font-size: 24px;
@@ -76,7 +76,7 @@
     &:hover::before{
       cursor: pointer;
       background: $white;
-      color: gold;
+      color: $gold;
       transition-duration: 500ms;
       opacity: 0;
     }
