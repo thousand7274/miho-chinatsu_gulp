@@ -86,103 +86,14 @@
 }
 
 /* MediaQuery */
-@media only screen and (max-width: $breakpoint-sm) {
+@media only screen and (max-width: $breakpoint-md) {
+
   .pro-card{
-    box-sizing: border-box;
-    background: $color-gold;
-    border-radius: 0 40px;
-    display:flex;
-    align-items: center;
-    // max-width: 350px;
-    height: 600px;
-    margin: 50px auto;
-
-    &-container{
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      height: 100%;
-
-      & img{
-        border-radius: 0 40px 0 0 ;
-        object-fit: cover;
-        width: 100%;
-        height: 50%;
-      }
-
-      &__text{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        line-height: 1.7;
-        border-radius: 0 0 0 40px;
-        width: 100%;
-        height: 50%;
-        padding: 0;
-
-        &__title{
-          color: #fff;
-          font-size: 24px;
-          margin-bottom: 20px;
-
-        }
-      }
-    }
+    @include p-card;
   }
   .pro-card2{
-    box-sizing: border-box;
-    background: $color-gold;
-    border-radius: 0 40px;
-    display:flex;
-    align-items: center;
-    // max-width: 350px;
-    height: 500px;
-    margin: 50px auto;
-
-    &-container{
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      height: 100%;
-
-      & img{
-        border-radius: 0 40px 0 0 ;
-        object-fit: cover;
-        width: 100%;
-        height: 50%;
-      }
-
-      &__text{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        line-height: 1.7;
-        border-radius: 0 0 0 40px;
-        width: 100%;
-        height: 50%;
-        padding: 0;
-
-        &__title{
-          color: #fff;
-          font-size: 24px;
-          margin-bottom: 20px;
-
-        }
-      }
-    }
+    @include p-card;
   }
-  // .pro-card{
-  //   @extend %pro-card;
-  // }
-  // .pro-card2{
-  //   @extend %pro-card;
-  // }
 }
 
 /* MediaQuery end */
