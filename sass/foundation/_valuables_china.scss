@@ -1,6 +1,6 @@
 $white: #ffffff;
 $font-color:gold;
-
+$bg-color:rgb(34, 34, 34);
 // フォントオーサム導入
 @mixin fontawesome($i){
         content: $i;

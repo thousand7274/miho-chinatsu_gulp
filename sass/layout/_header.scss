@@ -5,7 +5,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  // border-bottom: 1px solid $white;
+  background-color: $bg-color;
 
   &__img{
     text-align: center;
@@ -48,14 +48,14 @@
     background-repeat: repeat-x;
     height: 15px;
     margin-top: 20px;
-    z-index: -1;
+    z-index: 11;
     position: relative;
 
     &::before{
       content:'';
       background:url('../../img/boat.png');
       background-repeat: no-repeat;
-      z-index: 1;
+      z-index: 12;
       position: absolute;
       width: 32px;
       height: 32px;
@@ -69,4 +69,13 @@
     }
 
   }
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba($bg-color,.8);
+
 }
