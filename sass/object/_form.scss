@@ -26,6 +26,7 @@
   z-index: 1;
   overflow: hidden;
   font-weight: 600;
+  margin-bottom: 20px;
 
   &::before {
     content: '';
@@ -79,6 +80,7 @@
 .inquiry {
   @include box;
   height: 120px;
+  margin-top: 10px;
 }
 
 /* MediaQuery start*/
@@ -88,6 +90,9 @@
   }
   .form-left {
     margin-right: 0px;
+  }
+  .form-right {
+    margin-top: 20px;
   }
 }
 
