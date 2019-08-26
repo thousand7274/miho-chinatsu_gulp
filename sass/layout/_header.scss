@@ -42,7 +42,18 @@
       }
     }
   }
-  &__border{
+
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba($bg-color,.8);
+
+}
+.border{
     width: 100%;
     background: url('../../img/h-border.png');
     background-repeat: repeat-x;
@@ -69,13 +80,3 @@
     }
 
   }
-}
-.fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba($bg-color,.8);
-
-}
