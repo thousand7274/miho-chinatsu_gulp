@@ -87,7 +87,6 @@
 @media only screen and (max-width: $breakpoint-md) {
   .form{
     @include i-card;
-    width: calc(100% );
 
   }
   .form-left {
