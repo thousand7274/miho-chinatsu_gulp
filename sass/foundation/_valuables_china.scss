@@ -65,17 +65,17 @@ $bg-color:rgb(34, 34, 34);
     z-index: 11;
     position: relative;
 
-    &::before{
-      content:'';
-      background:url('../../img/boat.png');
-      background-repeat: no-repeat;
-      z-index: 12;
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      top: -23px;
-      left: 300px;
-
-    }
+  &::before{
+    content:'';
+    background:url('../../img/boat.png');
+    background-repeat: no-repeat;
+    z-index: 12;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -23px;
+    left: 300px;
 
   }
+
+}

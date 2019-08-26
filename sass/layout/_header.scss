@@ -1,6 +1,5 @@
 
 
-
 .header{
   margin-top: 20px;
   display: flex;
@@ -43,7 +42,7 @@
     }
   }
   &__border{
-    @extend %border
+    @extend %border;
   }
 }
 .fixed{
@@ -53,5 +52,24 @@
   width: 100%;
   z-index: 10;
   background-color: rgba($bg-color,.8);
+
+}
+
+
+
+/* MediaQuery */
+@media only screen and (max-width: $breakpoint-md) {
+
+  .header{
+    margin-top: 0;
+    &__nav{
+      display: none;
+  }
+
+  &__border{
+    margin-top: 100px;
+  }
+
+  }
 
 }
