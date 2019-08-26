@@ -5,5 +5,14 @@ footer {
   p {
     text-align: center;
   }
+}
 
+.footer-border {
+  @extend %border;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .footer-border{
+    display: none;
+  }
 }

@@ -87,13 +87,27 @@
 @media only screen and (max-width: $breakpoint-md) {
   .form{
     @include i-card;
+    width: calc(100% );
+
   }
   .form-left {
     margin-right: 0px;
+    .name,.email{
+      width: 300px;
+    }
   }
+
   .form-right {
     margin-top: 20px;
+    .inquiry{
+      width: 300px;
+    }
   }
+
+  footer p {
+    padding-top: 50px;
+  }
+
 }
 
 /* MediaQuery end */
