@@ -15,7 +15,6 @@ $bg-color:rgb(34, 34, 34);
     border-radius: 0 40px;
     display:flex;
     align-items: center;
-    // max-width: 350px;
     height: 600px;
     margin: 50px auto;
 
@@ -41,9 +40,11 @@ $bg-color:rgb(34, 34, 34);
         color: rgb(255, 255, 255);
         line-height: 1.7;
         border-radius: 0 0 0 40px;
-        width: 100%;
+        width: 98%;
         height: 50%;
-        padding: 0;
+        padding: 10px;
+        word-wrap: break-word;
+
 
         &__title{
           color: #fff;
