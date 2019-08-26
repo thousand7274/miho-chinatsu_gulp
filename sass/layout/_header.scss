@@ -42,7 +42,9 @@
       }
     }
   }
-
+  &__border{
+    @extend %border
+  }
 }
 .fixed{
   position: fixed;
@@ -53,30 +55,3 @@
   background-color: rgba($bg-color,.8);
 
 }
-.border{
-    width: 100%;
-    background: url('../../img/h-border.png');
-    background-repeat: repeat-x;
-    height: 15px;
-    margin-top: 20px;
-    z-index: 11;
-    position: relative;
-
-    &::before{
-      content:'';
-      background:url('../../img/boat.png');
-      background-repeat: no-repeat;
-      z-index: 12;
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      top: -23px;
-      left: 300px;
-
-
-
-
-
-    }
-
-  }
