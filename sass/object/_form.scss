@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 350px;
   margin-top: 50px;
+  margin-bottom: 100px;
   text-align: center;
 
   .sub-title {
@@ -12,75 +13,82 @@
     font-family: $font-fam;
   }
 
-
-  @mixin box {
-    box-sizing: border-box;
-    margin-top: 10px;
-    display: block;
-    width: 400px;
-  }
-
-    .form {
-    margin: 10px 0 30px;
-    display: flex;
-    justify-content: center;
-  }
-
-    .form-left {
-    margin-right: 50px;
-
-    .name {
-      @include box;
-      margin-bottom: 20px;
-      height: 50px;
-    }
-    .email {
-      @include box;
-      height: 50px;
-    }
-
-  }
-
-
-  .inquiry {
-    @include box;
-    height: 120px;
-  }
-
   button {
-    font-family: $font-fam;
-    background: $white;
-    color: $brown;
-    border: none;
-    border-radius: 10px;
-    font-size: 24px;
-    padding: 10px 30px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    font-weight: 600;
+  font-family: $font-fam;
+  background: $white;
+  color: $brown;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 600;
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      background: $color-gold;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: .4s;
-    }
-
-    &:hover::before{
-      cursor: pointer;
-      background: $white;
-      color: $gold;
-      transition-duration: 500ms;
-      opacity: 0;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: $color-gold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
   }
 
-
+  &:hover::before{
+    cursor: pointer;
+    background: $white;
+    color: $gold;
+    transition-duration: 500ms;
+    opacity: 0;
+  }
 }
+}
+
+@mixin box {
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: block;
+  width: 400px;
+}
+
+.form {
+  margin: 10px 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-left {
+  margin-right: 50px;
+
+  .name {
+    @include box;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  .email {
+    @include box;
+    height: 50px;
+  }
+}
+
+.inquiry {
+  @include box;
+  height: 120px;
+}
+
+/* MediaQuery start*/
+@media only screen and (max-width: $breakpoint-md) {
+  .form{
+    @include i-card;
+  }
+  .form-left {
+    margin-right: 0px;
+  }
+}
+
+/* MediaQuery end */

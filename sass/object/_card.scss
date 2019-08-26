@@ -3,8 +3,6 @@
   width: 350px;
   border-radius: 5px;
   background: $beige;
-  border: 4px solid $color-gold;
-
 
   img {
     width: 100%;
@@ -22,8 +20,27 @@
   }
 }
 
+//
+// %card {
+
+//   grid-gap: 0.8em;
+//   border: 1px solid #ddd;
+//   padding: 0.8em;
+//   margin: 0 0 2em;
+// }
+
+// .cssgrid > div {
+//   background: #ddd;
+//   overflow: auto;
+//   min-width: 0;
+//   padding: 1em;
+// }
+
+
 .card {
   @extend %card;
+
+
 
    &__title {
      text-align: center;
@@ -45,3 +62,30 @@
       }
     }
 }
+
+/* MediaQuery */
+@media only screen and (max-width: $breakpoint-md) {
+
+  .boxcard{
+    @include i-card;
+      // display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      // grid-auto-rows: 1fr;
+    }
+
+  //  .boxcard{
+  //   @include i-card;
+  //     flex-wrap: wrap;
+  //     width: calc(100% - 100px / 3);
+  //     .card{
+  //       margin-bottom: 30px;
+  //     }
+
+  //   }
+  .card{
+    margin-bottom: 30px;
+  }
+
+}
+
+/* MediaQuery end */
