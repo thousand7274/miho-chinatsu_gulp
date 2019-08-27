@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 350px;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
 
   .sub-title {
@@ -26,7 +26,7 @@
   z-index: 1;
   overflow: hidden;
   font-weight: 600;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   &::before {
     content: '';
@@ -85,6 +85,9 @@
 
 /* MediaQuery start*/
 @media only screen and (max-width: $breakpoint-md) {
+  .contact {
+    margin-bottom: 100px;
+  }
   .form{
     @include i-card;
 
