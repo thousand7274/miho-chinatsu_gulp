@@ -1,6 +1,6 @@
 $(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 220) {
+    if ($(this).scrollTop() > 250) {
       $('#menu').addClass('fixed');
     } else {
       $('#menu').removeClass('fixed');

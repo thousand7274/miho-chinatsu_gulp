@@ -16,14 +16,35 @@
       <img src="img/header.jpg" alt="ほんにいい味岡山海苔" width="300">
     </div>
     <nav id="menu">
-
       <ul class="header__nav">
-        <li>岡山海苔について</li>
+        <li><a href="index.html">岡山海苔について</a></li>
         <li><a href="process.html">海苔ができるまで</a></li>
-        <li>岡山海苔を買う</li>
-        <li>ぎょれんアクセス</li>
-        <li>お問い合わせ</li>
+        <li><a href="index.html">岡山海苔を買う</a></li>
+        <li><a href="index.html">ぎょれんアクセス</a></li>
+        <li><a href="index.html">お問い合わせ</a></li>
       </ul>
+      <!-- スマホ用ハンバーガーメニュー -->
+      <div class="menu-trigger">
+        <div class="menu-trigger__container">
+          <p class="menu-trigger__label">menu</p>
+          <div class="menu-trigger__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="nav-bar">
+          <ul id="menu-bar">
+            <li><a href="#">岡山海苔について</a></li>
+            <li><a href="#">海苔ができるまで</a></li>
+            <li><a href="#">岡山海苔を買う</a></li>
+            <li><a href="#">ぎょれんアクセス</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li id="top"><a href="#">topへ戻る</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /スマホ用ハンバーガーメニュー -->
       <div class="header__border"></div>
     </nav>
 
@@ -87,10 +108,12 @@
       </div>
     </div>
   </main>
-  <footer>
+  <div class="footer-border"></div>
+  <footer class="footer">
     <p>copyright (c) 2001 OKAYAMA GYOREN All rights reserved.</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/js/app.js"></script>
+  <script src="/js/btn.js"></script>
 </body>
 </html>
