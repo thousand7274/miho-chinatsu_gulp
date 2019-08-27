@@ -1,6 +1,5 @@
 
 
-
 .header{
   margin-top: 20px;
   display: flex;
@@ -43,31 +42,7 @@
     }
   }
   &__border{
-    width: 100%;
-    background: url('../../img/h-border.png');
-    background-repeat: repeat-x;
-    height: 15px;
-    margin-top: 20px;
-    z-index: 11;
-    position: relative;
-
-    &::before{
-      content:'';
-      background:url('../../img/boat.png');
-      background-repeat: no-repeat;
-      z-index: 12;
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      top: -23px;
-      left: 300px;
-
-
-
-
-
-    }
-
+    @extend %border;
   }
 }
 .fixed{
@@ -77,5 +52,24 @@
   width: 100%;
   z-index: 10;
   background-color: rgba($bg-color,.8);
+
+}
+
+
+
+/* MediaQuery */
+@media only screen and (max-width: $breakpoint-md) {
+
+  .header{
+    margin-top: 0;
+    &__nav{
+      display: none;
+  }
+
+  &__border{
+    margin-top: 50px;
+  }
+
+  }
 
 }

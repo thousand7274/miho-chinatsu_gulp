@@ -15,7 +15,6 @@ $bg-color:rgb(34, 34, 34);
     border-radius: 0 40px;
     display:flex;
     align-items: center;
-    // max-width: 350px;
     height: 600px;
     margin: 50px auto;
 
@@ -41,9 +40,11 @@ $bg-color:rgb(34, 34, 34);
         color: rgb(255, 255, 255);
         line-height: 1.7;
         border-radius: 0 0 0 40px;
-        width: 100%;
+        width: 98%;
         height: 50%;
-        padding: 0;
+        padding: 10px;
+        word-wrap: break-word;
+
 
         &__title{
           color: #fff;
@@ -54,3 +55,27 @@ $bg-color:rgb(34, 34, 34);
       }
     }
   }
+//ボーダー
+%border{
+    width: 100%;
+    background: url('../../img/h-border.png');
+    background-repeat: repeat-x;
+    height: 15px;
+    margin-top: 20px;
+    z-index: 11;
+    position: relative;
+
+  &::before{
+    content:'';
+    background:url('../../img/boat.png');
+    background-repeat: no-repeat;
+    z-index: 12;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -23px;
+    left: 300px;
+
+  }
+
+}

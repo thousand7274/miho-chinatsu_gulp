@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>生産工程</title>
+  <title>生産工程：チームノリノリ制作</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
@@ -17,15 +17,37 @@
     </div>
     <nav id="menu">
       <ul class="header__nav">
-        <li>岡山海苔について</li>
+        <li><a href="index.html">岡山海苔について</a></li>
         <li><a href="process.html">海苔ができるまで</a></li>
-        <li>岡山海苔を買う</li>
-        <li>ぎょれんアクセス</li>
-        <li>お問い合わせ</li>
+        <li><a href="index.html">岡山海苔を買う</a></li>
+        <li><a href="index.html">ぎょれんアクセス</a></li>
+        <li><a href="index.html">お問い合わせ</a></li>
       </ul>
+      <!-- スマホ用ハンバーガーメニュー -->
+      <div class="menu-trigger">
+        <div class="menu-trigger__container">
+          <p class="menu-trigger__label">menu</p>
+          <div class="menu-trigger__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="nav-bar">
+          <ul id="menu-bar">
+            <li><a href="#">岡山海苔について</a></li>
+            <li><a href="#">海苔ができるまで</a></li>
+            <li><a href="#">岡山海苔を買う</a></li>
+            <li><a href="#">ぎょれんアクセス</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li id="top"><a href="#">topへ戻る</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /スマホ用ハンバーガーメニュー -->
       <div class="header__border"></div>
-
     </nav>
+
   </header>
   <main>
     <h2 class="pro-title">岡山海苔が出来るまで</h2>
@@ -86,10 +108,12 @@
       </div>
     </div>
   </main>
-  <footer>
+  <div class="footer-border"></div>
+  <footer class="footer">
     <p>copyright (c) 2001 OKAYAMA GYOREN All rights reserved.</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/js/app.js"></script>
+  <script src="/js/btn.js"></script>
 </body>
 </html>
